@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: serif;
+    background: linear-gradient(325deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+
+#container{
+    background-color: #f5f5f5;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(44, 38, 38, 0.5);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+}
+
+
+#first-screen{
+    flex: 1;
+    display: flex;
+    gap: 9em;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+}
+
+#backButton{
+    margin-top: 1em;
+    margin-bottom: -4em;
+    margin-left: 19em;
+    max-width: 800px;
+    width: 35%;
+    height: 3em;
+    transition: 0.5s;
+    border-radius: 1em;
+}
+
+#backButton:hover{
+  height: 2.5em;
+}
+
+.backButton{
+    display: none;
+}
+
+.backButton.activate{
+    display:block;
+}
+
+#HDDYT{
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.input{
+  border-radius: 0.5em;
+  width: 135%;
+  height: 6vh;
+  max-width: 2900px;
+  transition: 0.5s ease;
+  outline: none;
+  margin-bottom: 6em;
+  margin-top: -5em;
+  color: #000000;
+  background-color: #ece9e9;
+}
+
+.input:focus{
+    width: 140%;
+    height: 6.4vh;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    background-color: #b8c7f7;
+    border:none;
+    outline: 1px solid rgb(91, 148, 255); 
+}
+
+#ysd-total{
+    position: absolute;
+    font-size: 1em;
+    margin-top:-4.5em;
+}
+
+#confirm-btn{
+  width: 50%;
+  margin-top: -1em;
+  margin-bottom: 3em;
+  height: 3em;
+  border-radius: 2em;
+  border-color: rgba(0, 0, 0, 0.295);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #4b8fe2;
+  transition:0.5s ease;
+}
+
+#confirm-btn:hover{
+    width:45%;
+    background-color: #66a6ff;
+}
+
+#checkHistory{
+    margin-top: -1em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 23em;
+    max-width: 800px;
+    width: 25%;
+    height: 2em;
+    border-radius: 1em;
+    border: none;
+    background-color: #39f542;
+}
+
+.page{
+    display: none;
+}
+
+.page.active{
+    display: block;
+}
+
+p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+h1, h2{
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+button, input {
+    font-family: system-ui, sans-serif;
+}
+
+/* Second Screen */
+
+#YTB{
+    margin-top: 2.5em;
+}
+
+#Total-balance{
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 0.1em;
+    font-size: 2.5em;
+    color: #067a0c;
+}
+
+#profit{
+    margin-top: 4em;
+}
+
+#Total-profit{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+}
+
+#history{
+    margin-top: 1.5em;
+    max-width: 800px;
+    width: 20%;
+    height: 3em;
+    border-radius: 1em;
+}
+
+/*History Screen*/
+
+.historyy{
+    display: none;
+    height: 100%;
+    overflow: hidden;
+}
+
+.historyy.activate{
+    display: block;
+}
+
+#profitHistory{
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 10px 2em 10px;
+    cursor: pointer;
+    margin-top: 3.5em;
+}
+
+#profitHistory li{
+    margin-bottom: 1em;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 0.1em;
+    font-size: 1.2em;
+    color: #067a0c;
+}
+
+#profitHistory::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+#profitHistory::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+@media (max-width:425px) {
+  #first-screen {
+    display: flex;
+  }
+
+   #first {
+    display: flex;
+    flex-direction: column;
+   }
+
+   #HDDYT{
+    margin-top: 1em;
+    margin-bottom: 1em;
+     font-size: 3em;
+   }
+
+  .input {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .input:focus{
+     width: 100%;
+  }
+
+  #ysd-total{
+    position: relative;
+    font-size: 1.8em;
+  }
+
+  #Ysd-total-text, #Tdy-total-text{
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+  }
+
+  #confirm-btn{
+    margin-top: 2em;
+    font-size: 1.5em;
+    width: 75%;
+  }
+
+  #today, #yesterday {
+    width: 80%; /* or 100% if you prefer */
+    margin: 0 auto;
+    position: static; /* undo absolute */
+  }
+
+
+  #ysd-total {
+    margin: 0.5em 0;
+  }
+
+  #checkHistory {
+    margin-left: 0;
+    width: 50%;
+    font-size: 1.5em;
+    margin: -2em auto;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Money Tracker</title>
+      
+      <link rel="stylesheet" type="text/css" href="css.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+      <div id="container">
+        <button class="backButton" id="backButton">Back</button>
+        
+        <div class='page active' id="first">
+          <h1 id="HDDYT">HOW DID YOU DO TODAY</h1>
+          <div id="first-screen">
+            <div id="today">
+              <p id="Tdy-total-text">Today Total</p>
+              <input class='input' id="inputTdy" placeholder="Today Total"  autocomplete="off">
+            </div>
+      
+
+            <div id="yesterday">
+              <p id="Ysd-total-text">Yesterday Total</p>
+              <input class='input' id="inputYsd" placeholder="Yesterday Total"  autocomplete="off">
+              <p id="ysd-total">Yesterday Total<b>: <span id="totalysd">1000000</span> MMK</b></p>
+            </div>
+          </div>
+          <button id="confirm-btn">Confirm</button>
+          <button id="checkHistory">Profit History</button>
+        </div>
+
+        <div class="page" id="second-screen">
+           <h1 id="YTB"> Your Total Balance </h1>
+           <ul id="Total-balance"></ul>
+           <h2 id="profit"> Profit </h2>
+           <ul id="Total-profit"></ul>
+
+           <button id="history">Check Profit History</button>
+        </div>
+
+        <div class="historyy page" id="HistoryUl">
+          <ul id="profitHistory">
+          </ul>
+        </div>
+      </div>
+
+      <script src="js.js"></script>
+    </body>
+</html>
